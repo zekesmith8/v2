@@ -13,7 +13,7 @@ function App() {
       </p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          Welcome {count}
+          Oh my god a button - look at it go~! {count}
         </button>
       </div>
       </section>
