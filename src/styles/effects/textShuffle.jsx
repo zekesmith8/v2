@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { FiLock } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Example = () => {
@@ -23,7 +24,7 @@ const EncryptButton = () => {
   const scramble = () => {
     let pos = 0;
 
-    const intervalRef = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       const scrambled = TARGET_TEXT.split("")
         .map((char, index) => {
           if (pos / CYCLES_PER_LETTER > index) {
@@ -65,6 +66,7 @@ const EncryptButton = () => {
       className="group relative overflow-hidden rounded-lg border-[1px] border-slate-500 bg-slate-700 px-4 py-2 font-mono font-medium uppercase text-slate-300 transition-colors hover:text-indigo-300"
     >
       <div className="relative z-10 flex items-center gap-2">
+        <FiLock />
         <span>{text}</span>
       </div>
       <motion.span
