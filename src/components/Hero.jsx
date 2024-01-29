@@ -13,7 +13,12 @@ function Hero() {
         Software Developer
       </p>
       <div className="card">
-        <motion.button onClick={() => setCount((count) => count + 1)}>
+        <motion.button 
+        onClick={() => setCount((count) => count + 1)}
+        whileHover={{scale: 1.1}}
+        whileTap={{scale: 0.9}}
+        className = "save-button"
+        >
           Oh my god a button - look at it go~! {count}
         </motion.button>
       </div>
