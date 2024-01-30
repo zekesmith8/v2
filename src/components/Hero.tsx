@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { useState } from 'react'
 
 
+
 function Hero() {
+  const [modalOpen, setModalOpen] = useState(false);
   const [count, setCount] = useState(0)
 
   return (
