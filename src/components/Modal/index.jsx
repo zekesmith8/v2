@@ -38,7 +38,7 @@ const Modal = ({ handleClose, text }) => {
           >
             <p>{text}</p>
             <button onClick={handleClose}>WRONG LEVER !!!!!!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni sed autem vel veniam, tempore eaque molestiae possimus illum sit, et cumque? Doloremque et non vel molestias sapiente cum veniam voluptatum.</button>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni sed autem vel veniam</button>
           </motion.div>
       </Backdrop>
     );
