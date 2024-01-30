@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from 'react'
 import Modal from "./Modal/index.jsx"
 
@@ -29,7 +29,15 @@ function Hero() {
           Pull the lever Kronk 
         </motion.button>
 
+        <AnimatePresence
+        initial={false}
+        exitBeforeEnter={false}
+        onExitComplete={() => null}
+        >
         {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+        </AnimatePresence>
+
+        
 
       </div>
       </section>
