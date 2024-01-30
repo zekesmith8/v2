@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from 'react'
 import Modal from "./Modal/index.jsx"
-import './App.css'
+
 
 
 
@@ -28,6 +28,9 @@ function Hero() {
         >
           Pull the lever Kronk 
         </motion.button>
+
+        {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+
       </div>
       </section>
       <section></section>
