@@ -8,7 +8,6 @@ function App() {
   return (
     <>
     <section>
-      <></>
       <h1 className="header">ByEzekiel</h1>
       <p>
         Software Developer

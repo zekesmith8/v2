@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from "framer-motion";
-import './App.css'
+import '../App.css'
 
 function Hero() {
   const [count, setCount] = useState(0)
