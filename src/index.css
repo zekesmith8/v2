@@ -3,7 +3,6 @@
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
-  color: #87CEEB;
   color-scheme: light dark;
   background-color: #2E0540;
   overflow: hidden;
@@ -38,10 +37,10 @@ main {
 }
 
 h1 {
-  color: #ff9d00;
+  color: #87CEEB;
   font-size: 175%;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 h2 {
@@ -295,7 +294,7 @@ li {
     width: calc(25vw);
   }
   h1 {
-    color: #ff9d00;
+    color: #87CEEB;
     font-size: 250%;
   }
 }
