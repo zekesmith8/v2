@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Modal from "./components/Modal/index.jsx"
 import './App.css'
 
 

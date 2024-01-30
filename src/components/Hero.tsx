@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import { useState } from 'react'
+import Modal from "./Modal/index.jsx"
+import './App.css'
 
 
 
 function Hero() {
   const [modalOpen, setModalOpen] = useState(false);
-  const [count, setCount] = useState(0)
+
+  const close = () => setModalOpen (false);
+  const open = () => setModalOpen (true);
+ 
 
   return (
     <>
@@ -16,12 +21,12 @@ function Hero() {
       </p>
       <div className="card">
         <motion.button 
-        onClick={() => setCount((count) => count + 1)}
         whileHover={{scale: 1.1}}
         whileTap={{scale: 0.9}}
         className = "save-button"
+        onClick={() => (modalOpen ? close() : open())}
         >
-          Oh my god a button - look at it go~! {count}
+          Pull the lever Kronk 
         </motion.button>
       </div>
       </section>
