@@ -31,7 +31,6 @@ function Hero() {
 
         <AnimatePresence
         initial={false}
-        exitBeforeEnter={false}
         onExitComplete={() => null}
         >
         {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
